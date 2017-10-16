@@ -1,0 +1,21 @@
+<p>Build-in pipe:</p>
+<br>
+<p>title: {{ course.title | uppercase }}</p>
+<p>title: {{ course.title | lowercase }}</p>
+<p>students: {{ course.students | number}}</p>
+<p>rating: {{ course.rating | number:'1.1-1'}}</p>
+<p>price: {{ course.price | currency:'AUD':true:'3.2-2' }}</p>
+<p>releaseDate: {{ course.releaseDate }}</p>
+<br>
+<br>
+
+<p>Custom pipe:</p>
+<br>
+<p>{{ course.text | summary }}</p>
+<p>{{ course.text | summarywithvalue:10 }}</p>
+<br>
+<p>{{ course.text | titlecase }}</p>
+<p>{{ course.text | titleCase }}</p>
+
+<br>
+<p>{{ course.text | englishLetters }}</p>
