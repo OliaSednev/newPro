@@ -1,0 +1,19 @@
+
+<div class="container">
+  <ul>
+    <li>
+      {{questions[index].question}}
+
+      <div class="answers">
+        <div *ngFor="let answer of questions[index].answers">
+          <input type="radio" name="aas"/> {{answer}}
+        </div>
+      </div>
+
+      <a (click)="back()" class="glyphicon glyphicon-chevron-left"></a>
+      <a (click)="next()" class="glyphicon glyphicon-chevron-right"></a>
+
+    </li>
+  </ul>
+
+</div>
